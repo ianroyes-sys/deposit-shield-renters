@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0b1220;
+  --color-ink-50: #f3f5f8;
+  --color-ink-100: #e4e8ee;
+  --color-ink-700: #1a2740;
+  --color-ink-800: #131b2e;
+  --color-paper: #faf7f2;
+  --color-paper-dim: #f1ebe0;
+  --color-emerald: #0e9f6e;
+  --color-emerald-dark: #0b7d57;
+  --color-emerald-50: #e6f6f0;
+  --color-brass: #b08d4c;
+  --color-brass-light: #d3b876;
+  --color-brass-50: #f7f1e3;
+  --color-clay: #c4553b;
+  --color-clay-50: #fbeae6;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-50: var(--color-ink-50);
+  --color-ink-100: var(--color-ink-100);
+  --color-ink-700: var(--color-ink-700);
+  --color-ink-800: var(--color-ink-800);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-emerald: var(--color-emerald);
+  --color-emerald-dark: var(--color-emerald-dark);
+  --color-emerald-50: var(--color-emerald-50);
+  --color-brass: var(--color-brass);
+  --color-brass-light: var(--color-brass-light);
+  --color-brass-50: var(--color-brass-50);
+  --color-clay: var(--color-clay);
+  --color-clay-50: var(--color-clay-50);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-evidence);
+
+  --animate-fade-up: fade-up 0.6s ease both;
+  --animate-rise: rise 0.2s ease both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* ledger-line divider motif */
+.ledger-rule {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-brass) 0,
+    var(--color-brass) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  height: 1px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+::selection {
+  background: var(--color-emerald);
+  color: white;
+}

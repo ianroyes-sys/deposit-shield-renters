@@ -1,0 +1,80 @@
+{
+  "identifier" : "5C1A1E20-6F3B-4C6E-9A2E-DEP0S1TSH1EL",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "17.99",
+      "familyShareable" : false,
+      "internalID" : "5C1A1E20-6F3B-4C6E-9A2E-000000000001",
+      "localizations" : [
+        {
+          "description" : "Unlocks unlimited photos, the full condition report, and the evidence packet for this property.",
+          "displayName" : "Shield Unlock",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "shield_unlock_17",
+      "referenceName" : "Shield Unlock (per property)",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_locale" : "en_US",
+    "_storefront" : "USA"
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21A00000-0000-0000-0000-000000000001",
+      "localizations" : [],
+      "name" : "Communities Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "29.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "21A00000-0000-0000-0000-000000000002",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited violations, inspection areas, and enforcement history for your association.",
+              "displayName" : "Communities Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "hoa_pro_monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Communities Pro Monthly",
+          "subscriptionGroupID" : "21A00000-0000-0000-0000-000000000001",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "299.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "21A00000-0000-0000-0000-000000000003",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited violations, inspection areas, and enforcement history — billed yearly, two months free.",
+              "displayName" : "Communities Pro Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "hoa_pro_yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Communities Pro Yearly",
+          "subscriptionGroupID" : "21A00000-0000-0000-0000-000000000001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
